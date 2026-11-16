@@ -1,4 +1,4 @@
-# Smile Detection with Face Alignment and InceptionResNetV1
+# Real-Time Smile Detection with Face Alignment and InceptionResNetV1
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c)
@@ -45,7 +45,7 @@ To normalize head tilt and framing variations before classification, each face i
 ## Repository Structure
 
 ```text
-smile_detection/
+realtime-smile-detection/
 ├── models/
 │   ├── best_smile_model.pth             # Fine-tuned model checkpoint
 │   └── face_landmarker.task             # MediaPipe FaceLandmarker asset
