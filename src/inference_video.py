@@ -2,7 +2,7 @@ import argparse
 import time
 import cv2
 import torch
-from model import SmileClassifier, FaceAligner
+from smile_detector import SmileClassifier, FaceAligner
 
 
 def main():
@@ -43,6 +43,10 @@ def main():
 
     while True:
         ret, frame = cap.read()
+
+        if isinstance(source, int):
+            frame = cv2.flip(frame, 1)
+        
         if not ret:
             break
 
